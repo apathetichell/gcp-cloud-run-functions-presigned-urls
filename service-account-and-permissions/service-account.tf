@@ -21,15 +21,6 @@ resource "google_project_iam_custom_role" "object-signer" {
   permissions = ["iam.serviceAccounts.signBlob"]
 }
 
-/*
-This is the role which would be used if needed to allow for token access
-resource "google_project_iam_custom_role" "my-custom-role" {
-  role_id     = "myCustomRole"
-  title       = "My Custom Role"
-  description = "A description"
-  permissions = ["iam.roles.list", "iam.roles.create", "iam.roles.delete"]
-}
-*/
 
 
 ## This binds the policy to the bucket which stores the objects to sign.
