@@ -1,3 +1,5 @@
+##this is the Cloud Run Function to generate the presigned URL.
+
 import datetime
 import functions_framework
 import json
@@ -48,9 +50,7 @@ def generate_download_signed_url(bucket_name, blob_name,credentials):
     )
 
     print("Generated GET signed URL:")
-    ##print(url)
-    ##print("You can use this URL with any user agent, for example:")
-    ##print(f"curl '{url}'")
+
     return url
 
 
