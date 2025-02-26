@@ -33,19 +33,3 @@ variable "project-name" {
     description="this is the project name"
     type= string
 }
-
-
-
-
-
-
-
-
-
-
-//var.function_service_account
-
-
-//role->"presigned-url-storage-object-user" default
-
-//role->"presigned-iam-object-signer" default
